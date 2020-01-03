@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <router-view/>
+
+  <!-- <van-tabbar v-model="active" active-color="#07c160" inactive-color="#000" class="nav-van">
+        <van-tabbar-item icon="home-o" @click=" onClickHome">首页</van-tabbar-item>
+        <van-tabbar-item icon="apps-o" @click="onClickClassify">分类</van-tabbar-item>
+        <van-tabbar-item icon="cart-circle-o" @click="onClickWant">吃什么</van-tabbar-item>
+        <van-tabbar-item icon="cart-o" @click="onClickCart">购物车</van-tabbar-item>
+        <van-tabbar-item icon="friends-o" @click="onClickMine">我的</van-tabbar-item>
+  </van-tabbar> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+// export default {
+//   methods: {
+//     onClickHome() {
+//       this.$router.push("home");
+//     },
+//     onClickClassify() {
+//       this.$router.push("classify");
+//     },
+//     onClickWant() {
+//       this.$router.push("want");
+//     },
+//     onClickCart() {
+//       this.$router.push("cart");
+//     },
+//     onClickMine() {
+//       this.$router.push("mine");
+//     }
+//   },
+// };
 </script>
-
+ 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+body {
+  font-size: 16px;
+  background-color: #f8f8f8;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
